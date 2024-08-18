@@ -1,0 +1,201 @@
+#hero-section {
+    -webkit-clip-path: ellipse(100% 50% at 50% 0%);
+    clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+/* Header styles */
+header {
+    padding: 20px 20px; /* Reduced padding for closer containers */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Adjust height based on the content */
+    position: relative;
+    flex-direction: row; /* Default to row layout */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    background-color: rgba(88, 8, 250, 0.1);
+}
+
+/* Left container styles */
+#hero-left-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center text horizontally */
+    padding: 0 10px; /* Reduced padding for closer containers */
+}
+
+.hero-left-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-left-container-text p {
+    margin: 5px 0; /* Reduced margin between text lines */
+}
+
+.hero-left-container-text .bold-large {
+    font-size: 3em; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.hero-left-container-text .small-inline {
+    font-size: 1.2em; /* Adjust size as needed */
+    display: inline;
+    color: rgb(89, 89, 89);
+}
+
+/* Right container styles */
+#hero-right_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px; /* Added padding to match left container */
+}
+
+.hero-text-box h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.hero-text-box h1 .canwebe {
+    color: #ad10c3;
+}
+
+.btn-container {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-1 {
+    background-color: #cb0ba8;
+}
+
+.btn-2 {
+    background-color: #ad10c3;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    /* Adjustments for smaller screens, if needed */
+}
+
+@media (max-width: 980px) {
+    #hero-left-container,
+    #hero-right_container {
+        padding: 20px 0; /* Add padding to separate stacked containers */
+        width: 100%;
+        text-align: center; /* Center text for consistency */
+    }
+
+    .hero-left-container-text {
+        align-items: center; /* Center text within the left container */
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        flex-direction: column; /* Stack containers vertically */
+        height: auto; /* Adjust height as needed */
+    }
+
+    #hero-left-container {
+        display: none; /* Hide the left container on mobile */
+    }
+
+    .hero-left-container-text .bold-large {
+        font-size: 3em; /* Reduce size for smaller screens */
+    }
+
+    .hero-left-container-text .small-inline {
+        font-size: 1em; /* Reduce size for smaller screens */
+    }
+
+    .hero-text-box h1 {
+        font-size: 2.5em; /* Reduce size for smaller screens */
+    }
+
+    .hero-text-box h2 {
+        font-size: 1.2em; /* Reduce size for smaller screens */
+    }
+}
+
+@media (max-width: 580px) {
+    .hero-left-container-text .bold-large {
+        font-size: 2.5em; /* Further reduce size */
+    }
+
+    .hero-left-container-text .small-inline {
+        font-size: 0.9em; /* Further reduce size */
+    }
+
+    .hero-text-box h1 {
+        font-size: 2em; /* Further reduce size */
+    }
+
+    .hero-text-box h2 {
+        font-size: 1em; /* Further reduce size */
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-left-container-text .bold-large {
+        font-size: 2em; /* Reduce to fit smaller screens */
+    }
+
+    .hero-left-container-text .small-inline {
+        font-size: 0.8em; /* Reduce to fit smaller screens */
+    }
+
+    .hero-text-box h1 {
+        font-size: 1.8em; /* Reduce to fit smaller screens */
+    }
+
+    .hero-text-box h2 {
+        font-size: 0.9em; /* Reduce to fit smaller screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .hero-left-container-text .bold-large {
+        font-size: 1.8em; /* Reduce to fit very small screens */
+    }
+
+    .hero-left-container-text .small-inline {
+        font-size: 0.7em; /* Reduce to fit very small screens */
+    }
+
+    .hero-text-box h1 {
+        font-size: 1.5em; /* Reduce to fit very small screens */
+    }
+
+    .hero-text-box h2 {
+        font-size: 0.8em; /* Reduce to fit very small screens */
+    }
+}

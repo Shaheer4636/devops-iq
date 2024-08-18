@@ -1,0 +1,128 @@
+
+/* Roles Header Styles */
+.roles-header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.roles-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.roles-header hr {
+    width: 40%;
+    border: 2px solid #0056b3;
+    margin: 10px auto;
+}
+hr {
+    width: 40%;
+    border: 2px solid #0056b3;
+    margin: 10px auto;
+}
+
+/* Role Buttons */
+.role-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 2px solid #6c757d;
+}
+
+.role-button img {
+    margin-right: 12px;
+    width: 64px;
+    height: 64px;
+}
+
+
+.role-button:hover {
+    opacity: 0.95;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #e9ecef;
+    color: #0056b3;
+}
+
+/* Button Container Adjustments */
+.button-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button-wrapper {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    min-width: 200px;
+    max-width: 250px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .button-wrapper {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .button-wrapper {
+        flex: 1 1 100%;
+    }
+}
+.content-display {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+    color: #333;
+    display: none; /* Initially hide the content display */
+    transition: opacity 0.3s ease;
+}
+
+.content-display.show {
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+/* Add box shadow only when there is content inside */
+.content-display:not(:empty) {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content styling */
+.content-display h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #0056b3; /* Matches hover text color */
+}
+
+.content-display p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Hover effect */
+.content-display:not(:empty):hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
