@@ -1,0 +1,96 @@
+/* Footer Styling */
+.footer {
+    background-color: #000000; /* Deep purple background */
+    color: #fff; /* White text */
+    padding: 40px 20px; /* Generous padding */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient effect on footer background */
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #5808fa 50%, #ad10c3 50%);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Flexbox for content alignment */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px; /* Added gap for spacing */
+}
+
+/* Left side styling */
+.left-side {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.left-side p {
+    margin: 0;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+
+.left-side a {
+    color: #ffffff; /* Pink color for links */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.left-side a:hover {
+    color: #ffffff; /* White color on hover */
+    text-decoration: underline;
+}
+
+/* Right side styling */
+.right-side ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Spacing between list items */
+}
+
+.right-side li {
+    display: inline;
+}
+
+.footer-link {
+    color: #ffffff; /* White color for links */
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff; /* Pink color on hover */
+    text-decoration: underline;
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-side ul {
+        flex-direction: column;
+        gap: 10px; /* Reduced gap for vertical alignment */
+    }
+}
